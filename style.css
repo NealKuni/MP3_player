@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Sedgwick+Ave&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 * {
   box-sizing: border-box;
@@ -68,6 +68,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -123,7 +124,7 @@ body {
 }
 
 .progress-container {
-  background: white;
+  background: #fff;
   border-radius: 5px;
   cursor: pointer;
   margin: 10px 0;
