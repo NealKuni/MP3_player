@@ -68,8 +68,11 @@ function updateProgess(e){
   progress.style.width = `${progressPercent}%`
 }
 
-function setProgress(){
-  
+function setProgress(e){
+  const width = this.clientWidth
+  const clickX = e.offsetX
+  const duration = audio.duration
+  audio.currentTime = (clickX / width) * duration;
 }
 
 // Event listeners
@@ -88,3 +91,5 @@ nextBtn.addEventListener('click', nextSong)
 
 audio.addEventListener('timeupdate', updateProgess)
 progressContainer.addEventListener('click', setProgress)
+
+audio.addEventListener('ended', nextSong)
